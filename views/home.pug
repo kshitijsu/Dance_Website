@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts
+    scripts(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection 
+        div Welcome to Mafia's Dance Academy
+        div.small Eat Sleep Dance Repeat
+        
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+        div.card
+            h3 Dance the way you like
+        div.card
+            h3 Expert Teaching
+
+    section#sponsorsSection 
+        h2 Our Sponsors
